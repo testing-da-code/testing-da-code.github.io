@@ -322,10 +322,7 @@ header
 }
 #email
 {
-    float:right;
-    width:48%;
-    text-align: center;
-    background-color: white;
+    
     
 }
 .contact_logo
@@ -470,7 +467,7 @@ header
 {
     width : 100%;
     background-color: rgb(120,120,120);
-    border-radius: 25px;
+    border-radius: 15px;
     box-sizing: border-box;
     padding: 40px;
     margin-left: auto;
@@ -486,7 +483,14 @@ header
     display: inline-block;
     
 }
-
+#label_name_container
+{
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    display: inline-block;
+    
+}
 #email_first_name
 {
     width : 47%;
@@ -500,6 +504,23 @@ header
     float:right;
     box-sizing: border-box;
 }
+#email_first_name_label
+{
+    width : 47%;
+    float:left;
+    box-sizing: border-box;
+    
+}
+#email_last_name_label
+{
+    width : 47%;
+    float:right;
+    box-sizing: border-box;
+}
+.name_label
+{
+   font-size: 20px;
+}
 .form_input
 {
     padding:12px;
@@ -512,17 +533,21 @@ header
     border-width: 1px;
     
 }
+
 .email_label
 {
    font-size:25px; 
     
 }
+
 #email
 {
     width:100%;
     text-align: left;
     border-style: solid;
     border-width: 1px; 
+    float:right;
+    background-color: white;
     
 }
 #email_message
@@ -670,15 +695,35 @@ header
         padding: 0px;
         
     }
-   
+    #email
+    {
+        margin-bottom: 30px;
+    }
     .email_label
     {
-        font-size:50px; 
+        font-size:55px; 
         
+    }
+    #message_label
+    {
+        padding-top: 20px;
+    }
+    #name_container
+    {
+        
+    }
+    #label_name_container
+    {
+        margin-bottom: 40px;
+        
+    }
+    #label_only_email
+    {
+        padding-top: 80px;
     }
     .name_label
     {
-        font-size:45px;
+        font-size:50px;
     }
     .form_input
     {
@@ -690,6 +735,8 @@ header
     #error
     {
         font-size:50px; 
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
     #submit_button
     {

@@ -178,7 +178,7 @@ function checkScreen()
 
                             //Ajusting left side of container 
                             document.getElementById("left_side_container").style.width = "100%";
-        ;
+        
                             //Ajusting right side of container 
                             document.getElementById("right_side_container").style.width = "90%";
                             document.getElementById("right_side_container").style.padding = "0px";
