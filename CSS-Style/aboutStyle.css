@@ -633,6 +633,31 @@ header
 }
 @media only screen and (max-device-width:900px)
 {
+    #menu_nav_container
+    {
+        
+        height: 100vh;
+    }
+    .menu_nav_list
+    {
+        padding-top:40px;
+        padding-bottom:40px;
+    }
+    .menu_nav_link
+    {
+        font-size: 8vw;
+    }
+    #menuImage
+    {
+        display: block;
+        height: 100px;
+        width: 100px;
+    }
+    #close_image
+    {
+        height: 100px;
+        width: 100px;
+    }
     #nav_container
     {
         padding-top: 120px;
@@ -642,12 +667,7 @@ header
         height: 100px;
         width: auto;
     }
-    #menuImage
-    {
-        display: block;
-        height: 100px;
-        width: 100px;
-    }
+  
     .nav_list
     {
         display: none;

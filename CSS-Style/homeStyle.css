@@ -906,7 +906,7 @@ header
     #menu_nav_container
     {
         
-        
+        height: 100vh;
     }
     .menu_nav_list
     {
@@ -916,15 +916,6 @@ header
     .menu_nav_link
     {
         font-size: 8vw;
-    }
-    #nav_container
-    {
-        padding-top: 120px;
-    }
-    #logoImage
-    {
-        height: 100px;
-        width: auto;
     }
     #menuImage
     {
@@ -937,6 +928,16 @@ header
         height: 100px;
         width: 100px;
     }
+    #nav_container
+    {
+        padding-top: 120px;
+    }
+    #logoImage
+    {
+        height: 100px;
+        width: auto;
+    }
+    
     .nav_list
     {
         display: none;
