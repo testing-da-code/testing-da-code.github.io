@@ -1,4 +1,4 @@
-
+Notes:
 Home
 	- We made 2 different layouts so beasically the in html there are 2 different containers
 		one for each view mobile and desktop. For 3rd view Small browser, 
