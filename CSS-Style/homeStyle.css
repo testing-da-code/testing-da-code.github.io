@@ -905,8 +905,17 @@ header
 {
     #menu_nav_container
     {
-        height:100vh;
         
+        
+    }
+    .menu_nav_list
+    {
+        padding-top:40px;
+        padding-bottom:40px;
+    }
+    .menu_nav_link
+    {
+        font-size: 8vw;
     }
     #nav_container
     {
@@ -923,6 +932,11 @@ header
         height: 100px;
         width: 100px;
     }
+    #close_image
+    {
+        height: 100px;
+        width: 100px;
+    }
     .nav_list
     {
         display: none;
@@ -935,11 +949,15 @@ header
 
     #title_one
     {
-        font-size:55px;
+        font-size:60px;
     }
     #title_two
     {
         font-size:45px;
+        box-sizing: border-box;
+        padding-left: 5px;
+        padding-right: 5px;
+     
     }
     #left_side_container
     {
@@ -951,7 +969,7 @@ header
     }
     #right_side_container
     {
-        width:60%; 
+        width:70%; 
         float:none;
         padding-top: 80px;
         margin-left: auto;
