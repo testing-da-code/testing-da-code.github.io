@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel = "stylesheet" href = "CSS-Style\aboutStyle.css">
+</head>
+<body>
+	<header>
+		
+		<a id = "logo" href = "index.html"> <img id = "logoImage" src="images\Logo.png"  alt="logo"></a>
+		<ul id = "nav_container">
+			<li id = "list_one" class = "nav_list"><a class = "nav_link" href = "index.html" >Home</a></li>
+			<li id = "list_two" class = "nav_list"> <a class = "nav_link" href= "about.html">About</a></li>
+			<li id = "list_three" class = "nav_list"> <a class = "nav_link"  href= "services.html">Services</a></li>
+			<li id = "list_four" class = "nav_list"><a class = "nav_link" id = "onPage" href= "contactUs.html">Contact</a></li>
+		</ul>
+		<img id = "menuImage" src="images\menu_image.png"  onclick = "show_menu()" alt="Menu Button, press this button to open the navigation menu">
+		<div id = "menu_show_container">
+				
+				<ul id = "menu_nav_container">
+					<li id = "menu_list_one" class = "menu_nav_list"><a class = "menu_nav_link" href = "index.html" >Home</a></li>
+					<li id = "menu_list_two" class = "menu_nav_list"> <a class = "menu_nav_link" href= "about.html">About</a></li>
+					<li id = "menu_list_three" class = "menu_nav_list"> <a class = "menu_nav_link"  href= "services.html">Services</a></li>
+					<li id = "menu_list_four" class = "menu_nav_list"><a class = "menu_nav_link" id = "onPage" href= "contactUs.html">Contact</a></li>
+			</ul>
+		
+		</div>
+		
+		<img id ="close_image" src="images\close_image.png"  onclick = "close_menu()" alt = "This a button that closes the navigation menu">
+	</header>
+	<div id = "bar">
+	</div>
+	<div id = "desktop_view_container">
+		<div id = "background_container">
+			<div class = "para_stamps_container">
+				<div id = "top_level_left_side">
+					<div id = "slide_out_one_container">
+						<div class = "slide_out_title_one">About</div>
+					</div>
+					<div class = "para_one">
+						Art Concrete Construction was created in 2023.
+						The owner Angel Rodriguez has been working in concrete construction for 20+ years.
+						At the moment we are a small family business with hopes of becoming a large company. 
+						It doesn't matter the size of the project, we always like to honor our name by
+						making a work of art, through the cement.
+					</div>
+					<div id = "stamps_container">
+						<img class = "stamps_image" src="images\home\experience_sign_best_up.png"   alt = "">
+						<img class = "stamps_image" src="images\home\family_con.png"   alt = "">
+					</div>
+				</div>
+				<div id = "top_level_right_side">
+					<img class = "work_image" src="images\about\work_one.jpg"   alt = "">	
+				</div>
+			</div>
+		</div>
+		<div id = "second_level_container">
+			<div id = "customer_quality_container">
+				<div id = "second_level_left_side_customer">
+					<img class = "quality_n_customer_image"  src="images\about\customer_satisfaction_grey_two.png"    alt = "">
+					<div class = "quality_n_customer_para">
+						Our clients are our number one priority and seeing them happy 
+						with our work, is the best!
+					</div>
+				</div>
+				<div id = "second_level_right_side_quality">
+					<img class = "quality_n_customer_image" src="images\about\top_quality_icon_grey.png"   alt = "">
+					<div class = "quality_n_customer_para">
+						We are dedicated to giving the best of ourselves 
+						to our clients. That is why when we complete each job,
+						our work is of top quality.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id = "mobile_view_container">
+		
+		<div id = "mobile_slide_out_title">About</div>
+		<div id = "mobile_para_one">
+			Art Concrete Construction was created in 2023.
+			The owner Angel Rodriguez has been working in concrete construction for 20+ years.
+			At the moment we are a small family business with hopes of becoming a large company. 
+			It doesn't matter the size of the project, we always like to honor our name by
+			making a work of art, through the cement.
+		</div>
+		<div id = "mobile_stamps_container">
+			<img class = "mobile_stamps_image" src="images\home\experience_sign_best_up.png"   alt = "">
+			<img class = "mobile_stamps_image" src="images\home\family_con.png"   alt = "">
+		</div>
+		<img class = "mobile_work_image" src="images\about\work_one_mobile.jpg"   alt = "">
+		<div id = "mobile_quality_n_customer_outer_container">
+			<div id = "mobile_quality_n_customer_inner_container">
+				<img class = "mobile_quality_n_customer_image"  src="images\about\customer_satisfaction_grey_two.png"    alt = "">
+				<div class = "mobile_quality_n_customer_para">
+					Our clients come first and seeing them happy with our work is the best
+					
+				</div>
+				<img class = "mobile_quality_n_customer_image" src="images\about\top_quality_icon_grey.png"   alt = "">
+				<div class = "mobile_quality_n_customer_para">
+					We are dedicated to giving the best of ourselves to our clients and leaving quality work
+				</div>
+			</div>
+		</div>
+		
+			
+		
+	</div>
+</body>
+<script type="text/javascript" src="JS-Script/aboutScript.js"></script>
+</html>

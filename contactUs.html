@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel = "stylesheet" href = "CSS-Style\contactUsStyle.css">
+</head>
+<body>
+<header>
+	<a id = "logo" href = "index.html"> <img id = "logoImage" src="images\Logo.png" alt="Logo" ></a>
+	<ul id = "nav_container">
+    	<li id = "list_one" class = "nav_list"><a class = "nav_link" href = "index.html" >Home</a></li>
+    	<li id = "list_two" class = "nav_list"> <a class = "nav_link" href= "about.html">About</a></li>
+    	<li id = "list_three" class = "nav_list"> <a class = "nav_link"  href= "services.html">Services</a></li>
+    	<li id = "list_four" class = "nav_list"><a class = "nav_link" id = "onPage" href= "contactUs.html">Contact</a></li>
+	</ul>
+    <img id = "menuImage" src="images\menu_image.png" alt="Menu Button, press this button to open the navigation menu" onclick = "show_menu()">
+    <div id = "menu_show_container">
+            
+            <ul id = "menu_nav_container">
+                    
+    	           <li id = "menu_list_one" class = "menu_nav_list"><a class = "menu_nav_link" href = "index.html" >Home</a></li>
+    	           <li id = "menu_list_two" class = "menu_nav_list"> <a class = "menu_nav_link" href= "about.html">About</a></li>
+    	           <li id = "menu_list_three" class = "menu_nav_list"> <a class = "menu_nav_link"  href= "services.html">Services</a></li>
+    	           <li id = "menu_list_four" class = "menu_nav_list"><a class = "menu_nav_link" id = "onPage" href= "contactUs.html">Contact</a></li>
+	       </ul>
+    
+    </div>
+    
+    <img id = "close_image" src="images\close_image.png"  onclick = "close_menu()" alt = "This a button that closes the navigation menu">
+</header>
+<div id = "bar"></div>
+
+<div id = "left_side_container">
+	<div class = "title_one">Contact Us</div>
+	<div class = "title_two">Free estimate on job!<br>
+								Any questions?<br>
+								Give us a call, text or email us!
+	</div>
+	<a id = "phone_number_container" href = "tel:+1-000-000-0000" class = "slide_out_container">
+		000-000-0000
+	</a>
+	<a id = "email_container"  href = "mailto:1234567899@gmail.com" class = "slide_out_container">
+		12345678910@gmail.com
+	</a>
+</div>
+<div id = "right_side_container">
+	<div id = "form_container">
+        <label class = "email_label">Name</label><br>
+        <div id = "name_container">
+                <input type = "text" id = "email_first_name" class = "form_input">
+                <input type = "text" id = "email_last_name" class = "form_input">
+        </div>
+        <div id = "name_container">
+            <label  id = "email_first_name" class = "name_label" > First Name</label>
+            <label  id = "email_last_name" class = "name_label">Last Name</label>
+        </div>
+        <br><br>
+        <label class = "email_label">Email</label><br>
+        <input type = "text" id = "email" class = "form_input">
+        <br><br>
+        <label class = "email_label">Message</label><br>
+        <textarea type = "text" id = "email_message" class = "form_input"  rows="3"></textarea>
+        <br>
+        <input type = "text" id = "error" readonly>
+        <br>
+        <button id = "submit_button" onclick="submit_email()">Submit</button>
+        
+        
+        
+    </div>
+
+</div>
+
+<div id = "end_bar">
+</div>
+</body>
+<script type="text/javascript" src="JS-Script/contactUsScript.js"></script>
+</html>

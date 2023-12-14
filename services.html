@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel = "stylesheet" href = "CSS-Style\servicesStyle.css">
+</head>
+<body>
+<header>
+	<a id = "logo" href = "index.html"> <img id = "logoImage" src="images\Logo.png" 
+                                             alt="Logo"></a>
+	<ul id = "nav_container">
+    	<li id = "list_one" class = "nav_list"><a class = "nav_link" href = "index.html" >Home</a></li>
+    	<li id = "list_two" class = "nav_list"> <a class = "nav_link" href= "about.html">About</a></li>
+    	<li id = "list_three" class = "nav_list"> <a class = "nav_link"  href= "services.html">Services</a></li>
+    	<li id = "list_four" class = "nav_list"><a class = "nav_link" id = "onPage" href= "contactUs.html">Contact</a></li>
+	</ul>
+    <img id = "menuImage" src="images\menu_image.png"  onclick = "show_menu()" alt="Menu Button, press this button to open the navigation menu">
+    <div id = "menu_show_container">
+            
+            <ul id = "menu_nav_container">
+                    
+    	           <li id = "menu_list_one" class = "menu_nav_list"><a class = "menu_nav_link" href = "index.html" >Home</a></li>
+    	           <li id = "menu_list_two" class = "menu_nav_list"> <a class = "menu_nav_link" href= "about.html">About</a></li>
+    	           <li id = "menu_list_three" class = "menu_nav_list"> <a class = "menu_nav_link"  href= "services.html">Services</a></li>
+    	           <li id = "menu_list_four" class = "menu_nav_list"><a class = "menu_nav_link" id = "onPage" href= "contactUs.html">Contact</a></li>
+	       </ul>
+    
+    </div>
+    
+    <img id = "close_image" src="images\close_image.png" onclick = "close_menu()" alt = "This a button that closes the navigation menu">
+</header>
+    <div id = "bar"></div>
+   	<div id ="desktop_container_images">
+		<img id = "button_one_image" class = "image_button" src="images\services\sample_one.png" alt = "">
+		<img id = "button_two_image" class = "image_button" src="images\services\sample_two.png" alt = "">
+		<img id = "button_three_image" class = "image_button" src="images\services\sample_three.png" alt = "">
+		<img id = "button_four_image" class = "image_button" src="images\services\sample_four.png" alt = "">
+		<img id = "button_five_image" class = "image_button" src="images\services\sample_five.png" alt = "">
+		<img id = "button_six_image" class = "image_button" src="images\services\sample_six.png" alt = "">
+	</div>
+	<div id ="desktop_container_buttons">
+		<button id = "button_one" class = "button_type_one" onclick="button_one_stretch()">Driveways</button>
+		<button id = "button_two" class = "button_type_one" onclick="button_two_stretch()">Sidewalks</button>
+		<button id = "button_three" class = "button_type_one" onclick="button_three_stretch()">Slabs</button>
+		<button id = "button_four" class = "button_type_one" onclick="button_four_stretch()">Steps</button>
+		<button id = "button_five" class = "button_type_one" onclick="button_five_stretch()">Walls</button>
+		<button id = "button_six" class = "button_type_one" onclick="button_six_stretch()">Repairs, etc.</button>
+	</div>
+	<div id = "mobile_container">
+		<button id = "mobile_button_one" class = "mobile_button" onclick="mobile_button_one()">Driveways</button>
+		<button id = "mobile_button_two" class = "mobile_button" onclick="mobile_button_two()">Sidewalks</button>
+		<button id = "mobile_button_three" class = "mobile_button" onclick="mobile_button_three()">Slabs</button>
+		<button id = "mobile_button_four" class = "mobile_button" onclick="mobile_button_four()">Steps</button>
+		<button id = "mobile_button_five" class = "mobile_button" onclick="mobile_button_five()">Walls</button>
+		<button id = "mobile_button_six" class = "mobile_button" onclick="mobile_button_six()">Repairs, etc.</button>
+	</div>
+	<div id = "mobile_all_images_container">
+		
+		<div id = "mobile_button_one_images_container" class = "each_button_images_container">
+			<img  class = "mobile_image" src="images\services\mobile_driveway_one.jpg" alt = "">
+			<img  class = "mobile_image" src="images\services\mobile_driveway_two.jpg" alt = "">
+			<img  class = "mobile_image" src="images\services\mobile_driveway_three.jpg" alt = "">
+			<img  class = "mobile_image" src="images\services\mobile_driveway_four.jpg" alt = "">
+		</div>
+		<div id = "mobile_button_two_images_container" class = "each_button_images_container">
+			<img  class = "mobile_image" src="images\services\mobile_sidewalk_two.jpg" alt = "">
+			<img  class = "mobile_image" src="images\services\mobile_sidewalk_one.jpg" alt = "">
+			<img  class = "mobile_image" src="images\services\mobile_sidewalk_three.jpg" alt = "">
+			<img  class = "mobile_image" src="images\services\mobile_sidewalk_four.jpg" alt = "">
+		</div>
+		<div id = "mobile_button_three_images_container" class = "each_button_images_container">
+			<img  class = "mobile_image" src="images\services\mobile_slabs_one.jpg" alt = "">
+			<img  class = "mobile_image" src="images\services\mobile_slabs_two.jpg" alt = "">
+			<img  class = "mobile_image" src="images\services\mobile_slabs_three.jpg" alt = "">
+			
+		</div>
+		<div id = "mobile_button_four_images_container" class = "each_button_images_container">
+			<img  class = "mobile_image" src="images\services\mobile_steps_two.jpg" alt = "">
+			<img  class = "mobile_image" src="images\services\mobile_steps_three.jpg" alt = "">
+			<img  class = "mobile_image" src="images\services\mobile_steps_one.jpg" alt = "">
+		</div>
+		<div id = "mobile_button_five_images_container" class = "each_button_images_container">
+			<img  class = "mobile_image" src="images\services\mobile_walls_one.jpg" alt = "">
+			<img  class = "mobile_image" src="images\services\mobile_walls_two.jpg" alt = "">
+			<img  class = "mobile_image" src="images\services\mobile_walls_three.jpg" alt = "">
+			<img  class = "mobile_image" src="images\services\mobile_walls_four.jpg" alt = "">
+		</div>
+		<div id = "mobile_button_six_images_container" class = "each_button_images_container">
+			<img  class = "mobile_image" src="images\services\mobile_repairs_one.jpg" alt = "">
+			<img  class = "mobile_image" src="images\services\mobile_repairs_two.png" alt = "">
+			<img  class = "mobile_image" src="images\services\mobile_repairs_three.jpg" alt = "">
+			<img  class = "mobile_image" src="images\services\mobile_repairs_four.jpg" alt = "">
+		</div>
+	</div>
+    <div id = "end_bar"></div>
+	<div id = "da_footer">
+		<button id = "top_button" onclick=" mobile_to_top_button()">Back to top</button>
+	</div>
+    
+</body>
+<script type="text/javascript" src="JS-Script/servicesScript.js"></script>
+</html>
