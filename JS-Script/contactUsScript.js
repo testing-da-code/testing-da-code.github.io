@@ -209,7 +209,7 @@ function checkScreen()
                             //resize image
                             document.getElementById("logoImage").style.height = "80px";
                             //bar height
-                            document.getElementById("bar").style.height = "170px";
+                            document.getElementById("bar").style.height = "130px";
 
 
                             //Ajusting left side of container 

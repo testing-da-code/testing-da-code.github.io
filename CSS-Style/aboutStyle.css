@@ -423,7 +423,8 @@ header
     position:relative;
     text-align: justify;
     text-align-last: justify;
-    margin-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 30px;
     box-sizing: border-box;
     padding-left:4%;
@@ -431,8 +432,9 @@ header
 .stamps_image
 {
     display: inline-block;
-    width:40%;
+    width:100%;
     vertical-align: middle;
+    margin-bottom: 30px;
 }
 #second_level_container
 {
@@ -572,6 +574,7 @@ header
     margin-top: 30px;
     box-sizing: border-box;
     padding-left:4%;
+    padding-bottom: 40px;
 }
 .mobile_stamps_image
 {
@@ -700,5 +703,10 @@ header
     {
         font-size: 45px;
     }
+    #mobile_stamps_container
+{
+    
+    padding-bottom: 80px;
+}
 }
 

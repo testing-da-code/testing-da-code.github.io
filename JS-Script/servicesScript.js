@@ -141,7 +141,7 @@ function button_one_stretch()
     else
     {
         reset_all();
-        document.getElementById("button_one").style.width = "67.25%";
+        document.getElementById("button_one").style.width = "47%";
         document.getElementById("button_one_image").style.display = "block";
     }
     document.getElementById("button_one").style.backgroundColor = "rgb(0,0,64)";    
@@ -164,7 +164,7 @@ function button_two_stretch()
     else
     {
         reset_all();
-        document.getElementById("button_two").style.width = "53%";
+        document.getElementById("button_two").style.width = "75%";
         document.getElementById("button_two_image").style.display = "block";  
     }
     document.getElementById("button_two").style.backgroundColor = "rgb(0,0,64)";    
@@ -207,7 +207,7 @@ function button_four_stretch()
     else
     {
         reset_all();
-        document.getElementById("button_four").style.width = "56%";
+        document.getElementById("button_four").style.width = "79%";
         document.getElementById("button_four_image").style.display = "block";
     }
     document.getElementById("button_four").style.backgroundColor = "rgb(0,0,64)";    
@@ -228,7 +228,7 @@ function button_five_stretch()
     else
     {
         reset_all();
-        document.getElementById("button_five").style.width = "52%";
+        document.getElementById("button_five").style.width = "97%";
         document.getElementById("button_five_image").style.display = "block";
     }
     document.getElementById("button_five").style.backgroundColor = "rgb(0,0,64)";    
@@ -249,7 +249,7 @@ function button_six_stretch()
     else
     {
         reset_all();
-        document.getElementById("button_six").style.width = "67%";
+        document.getElementById("button_six").style.width = "97%";
         document.getElementById("button_six_image").style.display = "block";
     }
     document.getElementById("button_six").style.backgroundColor = "rgb(0,0,64)";    
