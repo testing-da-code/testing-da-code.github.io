@@ -295,6 +295,15 @@ function mobile_reset_all()
     mobile_reset_images();
 
 }
+//  View: Mobile
+//  Summary: This function scrolls into view last button but since header it scrolls into
+// view the top of the first pic
+function scroll_to_pics()
+{
+    'use strict';
+    document.getElementById("mobile_button_six").scrollIntoView();
+
+}
 //  View: Mobile 
 //  Button:Driveways
 //  Summary: This function is called when the first button is pressed which is "Steps"
@@ -310,6 +319,7 @@ function mobile_button_one()
     document.getElementById("mobile_button_one").style.backgroundColor = "rgb(0,0,64";
     document.getElementById("mobile_button_one").style.color = "white";
     document.getElementById("mobile_button_one_images_container").style.display = "block";
+    scroll_to_pics();
 
 }
 //  View: Mobile 
@@ -327,6 +337,7 @@ function mobile_button_two()
     document.getElementById("mobile_button_two").style.backgroundColor = "rgb(0,0,64";
     document.getElementById("mobile_button_two").style.color = "white";
     document.getElementById("mobile_button_two_images_container").style.display = "block";
+    scroll_to_pics();
 
 }
 //  View: Mobile 
@@ -344,6 +355,7 @@ function mobile_button_three()
     document.getElementById("mobile_button_three").style.backgroundColor = "rgb(0,0,64";
     document.getElementById("mobile_button_three").style.color = "white";
     document.getElementById("mobile_button_three_images_container").style.display = "block";
+    scroll_to_pics();
 
 }
 //  View: Mobile 
@@ -361,6 +373,7 @@ function mobile_button_four()
     document.getElementById("mobile_button_four").style.backgroundColor = "rgb(0,0,64";
     document.getElementById("mobile_button_four").style.color = "white";
     document.getElementById("mobile_button_four_images_container").style.display = "block";
+    scroll_to_pics();
 
 }
 //  View: Mobile
@@ -378,6 +391,7 @@ function mobile_button_five()
     document.getElementById("mobile_button_five").style.backgroundColor = "rgb(0,0,64";
     document.getElementById("mobile_button_five").style.color = "white";
     document.getElementById("mobile_button_five_images_container").style.display = "block";
+    scroll_to_pics();
 
 }
 //  View: Mobile 
@@ -395,6 +409,7 @@ function mobile_button_six()
     document.getElementById("mobile_button_six").style.backgroundColor = "rgb(0,0,64";
     document.getElementById("mobile_button_six").style.color = "white";
     document.getElementById("mobile_button_six_images_container").style.display = "block";
+    scroll_to_pics();
 
 }
 // View: Mobile
