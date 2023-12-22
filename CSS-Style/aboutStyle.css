@@ -690,7 +690,7 @@ header
     #mobile_para_one
     {
        
-        font-size: 45px;
+        font-size: 60px;
      
     }
     #mobile_slide_out_title
@@ -699,14 +699,21 @@ header
         padding-top: 20px;
         padding-bottom: 20px;
     }
+    .mobile_quality_n_customer_image
+    {
+        width:60%;
+        margin-top: 80px;
+        
+        
+    }
     .mobile_quality_n_customer_para
     {
-        font-size: 45px;
+        font-size: 80px;
     }
     #mobile_stamps_container
-{
-    
-    padding-bottom: 80px;
-}
+    {
+        
+        padding-bottom: 80px;
+    }
 }
 
