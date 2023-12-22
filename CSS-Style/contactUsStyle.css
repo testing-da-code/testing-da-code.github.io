@@ -417,6 +417,7 @@ header
     color: black;
     box-sizing: border-box;
     padding-left: 40px;
+    padding-right: 20px;
 }
 .slide_out_container
 {
@@ -667,6 +668,7 @@ header
         color: black;
         box-sizing: border-box;
         padding-left: 40px;
+        padding-right: 40px;
     }
     .slide_out_container
     {   
