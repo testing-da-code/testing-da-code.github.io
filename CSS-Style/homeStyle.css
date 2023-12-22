@@ -939,7 +939,7 @@ header
    
     
     background-attachment:scroll;
-    background-position:top;
+    background-position:left top;
     background-repeat:no-repeat;
     background-size:cover;
     padding-top: 0px;
@@ -1139,13 +1139,16 @@ header
 #mobile_services_list_top
 {
     
-    width:98%;
+    width:100%;
     text-align: center;
     text-align-last: center;
     box-sizing: border-box;
     padding:0px 0px;
+    padding-bottom: 120px;
     margin-left: auto;
     margin-right: auto;
+    background-color: rgb(255,255,255,.2);
+    margin: 0px;
     
     
     
@@ -1188,7 +1191,7 @@ header
     
     
 }
-@media only screen and (max-device-width:1100px)
+@media only screen and (max-device-width:1020px)
 {
     #menu_nav_container
     {
@@ -1339,6 +1342,11 @@ header
         padding-top: 20px;
         padding-bottom: 20px;
     }
+    #wwd_container
+    {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
     #wwd_para
     {
         font-size: 60px;
@@ -1365,5 +1373,22 @@ header
         display: block;
         margin-bottom: 200px;
         margin-top: 100px;
+    }
+    #big_image_container
+    {
+        width:100%;
+        background-image: url("../images/home/concrete_block_white_long_four.jpg");
+    
+        
+        background-attachment:scroll;
+        background-position:left top;
+        background-repeat:no-repeat;
+        background-size:cover;
+        padding-top: 0px;
+        padding-left:0%;
+        padding: 0px;
+        box-sizing: border-box;
+        
+        
     }
 }
