@@ -1116,7 +1116,7 @@ header
 }
 #mobile_title_one_im
 {
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 900;
     font-stretch: 100%;
     letter-spacing:-1px;
@@ -1149,10 +1149,11 @@ header
     
     
     
+    
 }
 .mobile_services_list_item_top
 {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 900;
     font-stretch: 100%;
     letter-spacing:0px;
@@ -1187,7 +1188,7 @@ header
     
     
 }
-@media only screen and (max-device-width:1000px)
+@media only screen and (max-device-width:1100px)
 {
     #menu_nav_container
     {
@@ -1308,8 +1309,25 @@ header
     {
         display: block;
     }
+    #mobile_title_one_im
+    {
+        font-size: 80px;
+    }
+    #mobile_services_list_top
+    {
+        
+     
+        
+        
+        
+    }
+    .mobile_services_list_item_top
+    {
+        font-size: 70px;
+        width:60%;
+    }
 
-    
+
     #left_side_second_level
     {
         width:100%;
@@ -1323,7 +1341,7 @@ header
     }
     #wwd_para
     {
-        font-size: 50px;
+        font-size: 60px;
     }
     #button_container
     {
