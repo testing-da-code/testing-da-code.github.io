@@ -89,7 +89,9 @@ function submit_email()
                                     // it redirects user to email logged into on device they are using
                                     subject = "Website Message - " + first_name + " " + last_name + " - " + email;
                                     mailto_string = "mailto:jenniferz@jennizcounselingcenter.com?subject=" + subject + "&body=" + message;
-                                    window.open(mailto_string);
+                                    
+                                    //simulates click to link
+                                    window.location.href = mailto_string;
                                 }
                             }
                         }

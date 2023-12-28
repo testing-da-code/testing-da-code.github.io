@@ -371,11 +371,24 @@ input:checked + .slider:before {
 #email_first_name
 {
     width : 47%;
-    float:lefft;
+    float:left;
     box-sizing: border-box;
     
 }
 #email_last_name
+{
+    width : 47%;
+    float:right;
+    box-sizing: border-box;
+}
+#label_email_first_name
+{
+    width : 47%;
+    float:left;
+    box-sizing: border-box;
+    
+}
+#label_email_last_name
 {
     width : 47%;
     float:right;

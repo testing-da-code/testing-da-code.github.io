@@ -593,6 +593,7 @@ input:checked + .slider:before {
     border-width: 1px;
     border-color: gray;
     border-bottom-width: 0px;
+    box-sizing: border-box;
     
 }
 #language_button

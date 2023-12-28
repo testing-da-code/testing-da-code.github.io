@@ -82,7 +82,7 @@ function checkScreen()
 {
                         'use strict';
                         //closes menu incase resize screen whle mobile menu open
-                        close_menu();
+                        //close_menu();
                         //Checks if screen width or browser width are 800px or below. if so enter
                         if((screen_width <= 800) || (browser_width <= 800))
                         {
