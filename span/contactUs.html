@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel = "stylesheet" href = "CSS-Style\contactUsStyle.css">
+</head>
+<body>
+<header>
+    <div id = "logo_container">
+	   <a id = "logo" href = "home.html"> 
+            <img id = "logoImage" src="images\header\logo_grey.jpg" alt="">
+        </a>
+    </div>
+    <a id = "logo_mobile" href = "home.html"> 
+            <img id = "logoImage_mobile" src="images\header\logo_grey.jpg" alt="">
+        </a>
+	<ul id = "nav_container">
+    	<li id = "list_one" class = "nav_list"><a class = "nav_link" href = "home.html" >Comienzo</a></li>
+    	<li id = "list_two" class = "nav_list"> <a class = "nav_link" href= "about.html">Sobre Mi</a></li>
+    	<li id = "list_three" class = "nav_list"> <a class = "nav_link"  href= "services.html">Servicios</a></li>
+    	<li id = "list_four" class = "nav_list"><a class = "nav_link" id = "onPage" href= "contactUs.html">Contactanos</a></li>
+	</ul>
+    <img id = "menuImage" src="images\header\menu_grey.png"  onclick = "show_menu()" alt="Menu Button, press this button to open the navigation menu">
+    <div id = "menu_show_container">
+            
+            <ul id = "menu_nav_container">
+                    
+    	           <li id = "menu_list_one" class = "menu_nav_list"><a class = "menu_nav_link" href = "home.html" >Comienzo</a></li>
+    	           <li id = "menu_list_two" class = "menu_nav_list"> <a class = "menu_nav_link" href= "about.html">Sobre Mi</a></li>
+    	           <li id = "menu_list_three" class = "menu_nav_list"> <a class = "menu_nav_link"  href= "services.html">Servicios</a></li>
+    	           <li id = "menu_list_four" class = "menu_nav_list"><a class = "menu_nav_link" id = "onPage" href= "contactUs.html">Contactanos</a></li>
+	       </ul>
+    
+    </div>
+    
+    <img id ="close_image" src="images\header\x_grey.png"  onclick = "close_menu()" alt = "This a button that closes the navigation menu, it is dark blue with a white x in the middle">
+     <div id = "switchContainer">
+        <label class = "textOne" id = "nonselectedLang" >English</label>
+        <label class = "switch">
+        <input id = "switchOne" type="checkbox" onclick = "switchLanguage()">
+            <span class="slider round"></span>
+        </label>
+        <label class = "textOne" id = "selectedLang">Spanish</label>
+    </div>
+    
+    <div id = "switchContainer_mobile">
+        <label class = "textOne" id = "nonselectedLang" >English</label>
+        <label class = "switch">
+        <input id = "switchOne_mobile" type="checkbox" onclick = "switchLanguage()">
+            <span class="slider round"></span>
+        </label>
+        <label class = "textOne" id = "selectedLang">Spanish</label>
+    </div>
+</header>
+<div id = "bar">
+</div>
+<h1 id = "title1">Contact Me</h1>
+<div id = "whole_container_one">
+    <div id = "contact_me_container">
+            <p>
+                ¿Listo(a) para el siguiente paso? Consulta gratis de 15 minutos. Ingrese su información abajo y contactaré dentro de 1-2 días laborables.
+                <br><br>Si tiene una emergencia que amenaza su vida, llame al 911.
+            </p>
+            <img id ="about_image_one" src="images\contact\contact_image_a.jpg"   alt = "e">
+            
+    </div>
+    <div id = "form_container">
+        <label class = "email_label">Nombre</label><br>
+        <div id = "name_container">
+                <input type = "text" id = "email_first_name" class = "email_input">
+                <input type = "text" id = "email_last_name" class = "email_input">
+        </div>
+        <div id = "name_container">
+            <label  id = "email_first_name" > Nombre</label>
+            <label  id = "email_last_name" >Apellido</label>
+        </div>
+        <br><br>
+        <label class = "email_label">Correo Electronico</label><br>
+        <input type = "text" id = "email" class = "email_input">
+        <br><br>
+        <label class = "email_label">Mensaje</label><br>
+        <textarea type = "text" id = "email_message" class = "email_input"  rows="5"></textarea>
+        <br>
+        <input type = "text" id = "error" readonly>
+        <br>
+        <button id = "submit_button" onclick="submit_email()">Enviar</button>
+        
+        
+        
+    </div>
+    <div id = "divider">
+    </div>
+</div>
+<h1 id = "title_two">Preguntas Frecuentes. FAQS</h1>
+<div id = "questions_container">
+    <div class  = "question">¿Usted acepta la aseguranza?
+    </div>
+    <div class = "answer">En este momento NO estoy tomando aseguranza. Métodos de pago incluyen tarjeta de débito o crédito. También pagos por Zelle son aceptados. <b>Tarifa</b> - $115 para una sesión de terapia Individual de 50 minutos
+    
+    </div>
+    <div class  = "question">¿Quién es Consejera Profesional Licenciada- Asociada (LPC-A)?</div>
+    <div class = "answer">Una Consejera Profesional Asociada con Licencia es provisionalmente licenciada profesional consejera que ha completado un nivel académico de Maestría en programa de Consejería, paso los necesarios exámenes nacionales, y actualmente está trabajando para tener su licenciatura complete por medio de completando una cantidad designada de horas de asesoramiento clínico supervisado. Como LPC-Associada, estoy siendo supervisada por Charlsa Placker, LPC-S
+    </div>
+    <div class  = "question">¿Cuál es su Estimación de Buena Fe?</div>
+    <div class = "answer">Según la ley, los proveedores de atención médica deben proporcionar a los clientes que no tienen seguro o que no usan seguro una estimación de los cargos esperados por los servicios médicos, incluidos los servicios de Consejería/terapia.<br><br> 
+
+        Tiene derecho a recibir una estimación de buena fe por el costo total esperado de cualquier servicio de atención médica que no sea de emergencia, incluidos los servicios de Consejería/terapia.<br><br> 
+
+        Puede pedirle a su proveedor de atención médica y a cualquier otro proveedor que elija, una estimación de buena fe antes de programar un servicio o en cualquier momento durante el tratamiento.<br><br> 
+
+        Si recibe una factura que es al menos $400 más que su Estimación de buena fe, puede disputar la factura. Asegúrese de guardar una copia o una imagen de su Estimación de buena fe.<br><br> 
+
+        Si tiene preguntas o requiere más información sobre su derecho a una Estimación de buena fe, visite <a href = "https://www.cms.gov/nosurprises">www.cms.gov/nosurprises</a>.
+    </div>
+    
+</div>
+<h1 id = "title_three">Recursos</h1>
+<div id = "crisis_container">
+    Linea de Prevencion del Suicidio y Crisis<br>
+    Marce <a href = "tel:988">988</a><br>
+    Disponibles 24/7<br><br>
+    
+    Línea Nacional para la violencia Doméstica<br>
+    <a href = "tel:18007997233">1800-799-7233</a><br>
+    Envía un texto con la palabra Love al <a href = "tel:22522">22522</a><br><br>
+    Servicios Comunitarios<br>
+    Marca al <a href = "tel:211">211</a>
+</div>
+<div id = "contact_info_container">
+    JenniZ Counseling Center PLLC<br>
+    jenniferz@jennizcounselingcenter.com<br> 
+    <a href = "tel:2144304085">(214) - 430 - 4085</a><br>
+</div>
+   <div id = "copy_container">
+    © Copyright 2022, JenniZ Counseling Center PLLC<br><br>
+</div>
+</body>
+<script type="text/javascript" src="JS-Script/contactUsScript.js"></script>
+</html>

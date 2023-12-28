@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel = "stylesheet" href = "CSS-Style\aboutStyle.css">
+</head>
+<body>
+<header>
+    <div id = "logo_container">
+	   <a id = "logo" href = "home.html"> 
+            <img id = "logoImage" src="images\header\logo.jpg" alt="">
+        </a>
+    </div>
+    <a id = "logo_mobile" href = "home.html"> 
+            <img id = "logoImage_mobile" src="images\header\logo.jpg" alt="">
+        </a>
+	<ul id = "nav_container">
+    	<li id = "list_one" class = "nav_list"><a class = "nav_link" href = "home.html" >Comienzo</a></li>
+    	<li id = "list_two" class = "nav_list"> <a class = "nav_link" href= "about.html">Sobre Mi</a></li>
+    	<li id = "list_three" class = "nav_list"> <a class = "nav_link"  href= "services.html">Servicios</a></li>
+    	<li id = "list_four" class = "nav_list"><a class = "nav_link" id = "onPage" href= "contactUs.html">Contactanos</a></li>
+	</ul>
+    <img id = "menuImage" src="images\header\menu_blue.png"  onclick = "show_menu()" alt="Menu Button, press this button to open the navigation menu">
+    <div id = "menu_show_container">
+            
+            <ul id = "menu_nav_container">
+                    
+    	           <li id = "menu_list_one" class = "menu_nav_list"><a class = "menu_nav_link" href = "home.html" >Comienzo</a></li>
+    	           <li id = "menu_list_two" class = "menu_nav_list"> <a class = "menu_nav_link" href= "about.html">Sobre Mi</a></li>
+    	           <li id = "menu_list_three" class = "menu_nav_list"> <a class = "menu_nav_link"  href= "services.html">Servicios</a></li>
+    	           <li id = "menu_list_four" class = "menu_nav_list"><a class = "menu_nav_link" id = "onPage" href= "contactUs.html">Contactanos</a></li>
+	       </ul>
+    
+    </div>
+    
+    <img id ="close_image" src="images\header\x_blue.png"  onclick = "close_menu()" alt = "This a button that closes the navigation menu, it is dark blue with a white x in the middle">
+     <div id = "switchContainer">
+        <label class = "textOne" id = "nonselectedLang" >English</label>
+        <label class = "switch">
+        <input id = "switchOne" type="checkbox" onclick = "switchLanguage()">
+            <span class="slider round"></span>
+        </label>
+        <label class = "textOne" id = "selectedLang">Spanish</label>
+    </div>
+    
+    <div id = "switchContainer_mobile">
+        <label class = "textOne" id = "nonselectedLang" >English</label>
+        <label class = "switch">
+        <input id = "switchOne_mobile" type="checkbox" onclick = "switchLanguage()">
+            <span class="slider round"></span>
+        </label>
+        <label class = "textOne" id = "selectedLang">Spanish</label>
+    </div>
+</header>
+<div id = "bar">
+</div>
+<div id = "whole_container_one">
+    <div id = "pic_container">
+            <img id ="about_image_one" src="images\about\profile_image.jpg"   alt = "">
+            <div id = "job_title">Licensed Professional Counselor- Associate
+                in the State of Texas
+                MS, LPC-A
+            </div>
+    </div>
+    <div id = "about_info_container">
+            <div id = "title1">¡Hola! Mi nombre es Jennifer.</div>
+            <p id = "about_para">Soy una Consejera Profesional Asociada con Licencia para el Estado de Texas. Me gradué de la Universidad del Norte de Texas en Dallas con una Maestría en Ciencias en Consejería Clínica de Salud Mental. Tengo una licenciatura en psicología y una especialización en justicia penal. Mi experiencia profesional incluye trabajar con personas con trastornos de la salud mental y sobrevivientes de trauma en entornos clínicos sin fines de lucro y de práctica privada.Tengo una amplia experiencia en competencia multicultural trabajando con refugiados, sobrevivientes de violencia doméstica/Incesto e individuos con trastornos de salud mental y emocional. Actualmente, brindo servicios a adultos tanto en inglés como en español.
+            <br><br>Cuando no estoy trabajando, disfruto viajar, coleccionar imanes, leer libros y pasar tiempo de calidad con mi familia.
+            </p>
+    </div>
+    <div id = "divider">
+    </div>
+</div>
+<div id = "whole_container_two">
+    <div id = "approach_pic_container">
+            <div id = "title_two">Mi Acercamiento</div>
+            <img id ="about_image_two" src="images\about\branches.jpg"   alt = "">
+    </div>
+    <div id = "approach_info_container">
+            <p id = "approach_para">El enfoque de tratamiento que utilizó para la terapia es un enfoque integrado entre la Terapia Cognitiva Conductual (TCC) y terapia centrada en el cliente. Mi objetivo es ayudarlo a sentirse apoyado y escuchado en un entorno sin prejuicios. Quiero que tanto usted como yo construyamos un enfoque de colaboración terapéutica a medida que exploramos e identificamos sus pensamientos, sentimientos y comportamientos y avanzamos de situaciones estresantes de la vida a salud mental y bienestar. Por el momento estoy brindando mis servicios por Telesalud en línea. En un espacio seguro, privado, y cómodo para que usted pueda desahogarse siendo auténtico(a).
+            </p>
+            <div id = "list_stuff">
+                <div id = "title_three">Licencia:</div>
+                <ul>
+                    <li>Consejera Profesional Asociada con Licencia para el Estado de Texas</li>
+                </ul>
+                <div id = "title_three">Membresia:</div>
+                <ul>
+                    <li>Profesional Texas Counseling Association</li>
+                </ul>
+                
+                <div id = "title_three">Certificación:</div>
+                <ul>
+                    <li>Certificado de Telesalud Mental Ley y Ética Profesional</li>
+                </ul>
+                
+            </div>
+
+    </div>
+    <div id = "approach_divider">
+    </div>
+</div>
+
+
+	<div id = "copy">© Copyright 2022, JenniZ Counseling Center PLLC</div> <br><br>
+</body>
+<script type="text/javascript" src="JS-Script/aboutScript.js"></script>
+</html>

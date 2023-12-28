@@ -6,100 +6,22 @@ var screen_width = screen.width;
 var screen_height = screen.height;
 //variable that identifies language switch
 var swch = document.getElementById("switchOne");
+var swch_mobile = document.getElementById("switchOne_mobile");
+
+//runs whatever is inside the function brackets on page laoding fully
+window.onload = function() {
+    "use strict";
+    //makes slider slide to spansih since on psanish page
+    swch.checked = true;
+    swch_mobile.checked = true;
+};
+
 //switch language to english by redirecting to other page with english text
 function switchLanguage() 
 {
     "use strict";
-    swch.checked = true;
-    window.location.href = "span/contactUs.html";
-}
-
-//redirects user to email account they are logged into on the device they are using
-// it prefills all the info they inputted
-function submit_email()
-{
-    'use strict';
-    var first_name, last_name, email, message,mailto_string,subject;
-    //gets first name inputted
-    first_name = document.getElementById("email_first_name").value;
-    //gets last name inputted
-    last_name = document.getElementById("email_last_name").value;
-    //gets email inputted
-    email = document.getElementById("email").value;
-    //gets messae inputted
-    message = document.getElementById("email_message").value;
-    
-    //checks if first name txtfield is not empty
-    if(first_name.length == 0)
-    {
-            document.getElementById("error").value = "Please enter first name";
-    }
-    else
-    {
-        //checks if first name txtfield is not more then 250 characters
-        if(first_name.length > 50)
-        {
-                document.getElementById("error").value = "First name cannot be more then 50 characters";
-        }
-        else
-        {
-            //checks if last name txtfield is not empty
-            if(last_name.length == 0)
-            {
-                  document.getElementById("error").value = "Please enter last name";   
-            }
-            else
-            {
-                //checks if last name txtfield is not more then 50 charcters
-                if(last_name.length > 50)
-                {
-                      document.getElementById("error").value = "Last name cannot be more then 50 characters";   
-                }
-                else
-                {
-                    //checks if email txtfield is not empty
-                    if(email.length == 0)
-                    {
-                            document.getElementById("error").value = "Please enter email";
-                    }
-                    else
-                    {
-                        //checks if email txtfield is not more then 255 characters
-                        if(email.length > 256)
-                        {
-                                document.getElementById("error").value = "Email cannot be more then 256 characters";
-                        }
-                        else
-                        {
-                            //checks if message txtfield is not empty
-                            if(message.length == 0)
-                            {
-                                    document.getElementById("error").value = "Please enter message";
-                            }
-                            else
-                            {
-                                //checks if message txtfield is not more then 500 characters
-                                if(message.length > 500)
-                                {
-                                        document.getElementById("error").value = "Message cannot be more then 500 characters";
-                                }
-                                else
-                                {
-                                    //Gets info inputted and formats it to be prfilled in email when
-                                    // it redirects user to email logged into on device they are using
-                                    subject = "Website Message - " + first_name + " " + last_name + " - " + email;
-                                    mailto_string = "mailto:jenniferz@jennizcounselingcenter.com?subject=" + subject + "&body=" + message;
-                                    window.open(mailto_string);
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-             
-        }
-       
-    } 
+    swch.checked = false;
+    window.location.href = "../about.html";
 }
 
 //shows mobile menu when click mobile menu button
@@ -128,7 +50,7 @@ function close_menu()
 function checkScreen()
 {
                         'use strict';
-                         //closes menu incase resize screen whle mobile menu open
+                        //closes menu incase resize screen whle mobile menu open
                         close_menu();
                         //Checks if screen width or browser width are 800px or below. if so enter
                         if((screen_width <= 800) || (browser_width <= 800))
@@ -138,27 +60,27 @@ function checkScreen()
                             document.getElementById("list_two").style.display = "none";
                             document.getElementById("list_three").style.display = "none";
                             document.getElementById("list_four").style.display = "none";
-                            //remove desktop switch
+                            //remove switch container
                             document.getElementById("switchContainer").style.display = "none";
                             //remove desktop logo
-                            document.getElementById("logo_container").style.display = "none"
-                           //show mobile menu button
+                            document.getElementById("logo_container").style.display = "none";
+                            //show mobile menu
                             document.getElementById("menuImage").style.display = "block";
                             //show mobile logo
                             document.getElementById("logoImage_mobile").style.display = "block";
                              //show mobile switch
                             document.getElementById("switchContainer_mobile").style.display = "block";
-                            //expad containers so they take up 100% of widht so they are not side by side
-                            document.getElementById("contact_me_container").style.width = "100%";
-                            document.getElementById("form_container").style.width = "100%";
-
+                            //Expand containers so everything is one line as opposed to side by side
+                            document.getElementById("pic_container").style.width = "100%";
+                            document.getElementById("about_info_container").style.width = "100%";
+                            document.getElementById("approach_pic_container").style.width = "100%";
+                            document.getElementById("approach_info_container").style.width = "100%";
+                            
                             //Checks if screen widht is less then or equal to 800. 
                             // that way if someone just minimized their browser on a desktop, the screen size will still be to big
                             //in mobile phone
                             if(screen_width <= 800)
                             {
-                                //on mobile phone
-                                //resize nav container
                                 document.getElementById("switchContainer_mobile").style.paddingTop = "150px";
                             }
                             else
@@ -167,10 +89,13 @@ function checkScreen()
                                 //resize nav container
                                 document.getElementById("nav_container").style.paddingTop = "60px";
                                 //resize image
-                                //document.getElementById("logoImage_mobile").style.height = "50px";
+                                //document.getElementById("logoImage_mobile").style.height = "90px";
                                 //bar height
-                                document.getElementById("bar").style.height = "125px";
+                                document.getElementById("bar").style.height = "140px";
                                 document.getElementById("logo_container").style.display = "none";
+                                //resize nav container
+                                document.getElementById("switchContainer_mobile").style.paddingTop = "0px";
+                                //document.getElementById("menuImage").style.height = "40px";
                             }
                             
                             
@@ -184,26 +109,30 @@ function checkScreen()
                             document.getElementById("switchContainer_mobile").style.display = "none";
                             //remove mobile logo
                             document.getElementById("logoImage_mobile").style.display = "none";
-                            //remove mobile menu button
+                            //remove mobile menu 
                             document.getElementById("menuImage").style.display = "none";
                             //show desktop logo
-                             document.getElementById("logo_container").style.display = "block";
-                            //show desktop switch 
+                            document.getElementById("logo_container").style.display = "block";
+                            //show desktop switch
                             document.getElementById("switchContainer").style.display = "block";
-                            //show tabs of navigation bar for desktop
+                            //show desktop navigation bar
                             document.getElementById("list_one").style.display = "inline";
                             document.getElementById("list_two").style.display = "inline";
                             document.getElementById("list_three").style.display = "inline";
                             document.getElementById("list_four").style.display = "inline";
-                            //reduce containers to fit side by side for desktop view
-                            document.getElementById("contact_me_container").style.width = "30%";
-                            document.getElementById("form_container").style.width = "60%";
+                            //half width of containers so fit side by side for desktop view
+                            document.getElementById("pic_container").style.width = "45.5%";
+                            document.getElementById("about_info_container").style.width = "45.5%";
+                            document.getElementById("approach_pic_container").style.width = "47%";
+                            document.getElementById("approach_info_container").style.width = "47%";
+                           
                             //resize nav container
                             document.getElementById("nav_container").style.paddingTop = "5px";
                             //resize image
                             document.getElementById("logoImage").style.height = "120px";
+                            document.getElementById("switchContainer_mobile").style.paddingTop = "0px";
                             //bar height
-                            document.getElementById("bar").style.height = "170px";
+                            document.getElementById("bar").style.height = "210px";
                            
                         }
 

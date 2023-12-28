@@ -54,11 +54,11 @@ header
     height: auto;
     text-align: right;
     position:absolute;
-    
     top:10px;
     right:10px;
     padding-top: 10px;
     margin-bottom: 0px;
+    
     
    
 }
@@ -113,7 +113,7 @@ input:checked + .slider {
 }
 
 input:focus +.slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px black;
 }
 input:checked + .slider:before {
     -webkit-transform: translateX(26px);
@@ -649,6 +649,7 @@ input:checked + .slider:before {
     left:20px;
     padding-top: 10px;
     margin-bottom: 0px;
+    
     
    
 }

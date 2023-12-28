@@ -6,20 +6,22 @@ var screen_width = screen.width;
 var screen_height = screen.height;
 //variable to identify language switch
 var swch = document.getElementById("switchOne");
+var swch_mobile = document.getElementById("switchOne_mobile");
 
+//runs whatever is inside the function brackets on page laoding fully
 window.onload = function() {
     "use strict";
-    //alert("hello");
-    //swch.checked = true;
-   // window.location.href = "span/home.html";
+    //makes slider slide to spansih since on psanish page
+    swch.checked = true;
+    swch_mobile.checked = true;
 };
 
 
 //switch language to english by redirecting to other page with english text
 function switchLanguage() {
     "use strict";
-    swch.checked = true;
-    window.location.href = "span/home.html";
+    swch.checked = false;
+    window.location.href = "../index.html";
 }
 
 //This function checks to see if this device is an apple os

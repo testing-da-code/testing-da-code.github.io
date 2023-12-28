@@ -4,103 +4,136 @@
 <link rel = "stylesheet" href = "CSS-Style\homeStyle.css">
 </head>
 <body>
-    <header>
-        
-        <a id = "logo" href = "index.html"> <img id = "logoImage" src="images\Logo.png" alt="Logo"></a>
-        <ul id = "nav_container">
-            <li id = "list_one" class = "nav_list"><a class = "nav_link" href = "index.html" >Home</a></li>
-            <li id = "list_two" class = "nav_list"> <a class = "nav_link" href= "about.html">About</a></li>
-            <li id = "list_three" class = "nav_list"> <a class = "nav_link"  href= "services.html">Services</a></li>
-            <li id = "list_four" class = "nav_list"><a class = "nav_link" id = "onPage" href= "contactUs.html">Contact</a></li>
-        </ul>
-        <img id = "menuImage" src="images\menu_image.png"  onclick = "show_menu()" alt="Menu Button, press this button to open the navigation menu">
-        <div id = "menu_show_container">
-                <ul id = "menu_nav_container">    
-                    <li id = "menu_list_one" class = "menu_nav_list"><a class = "menu_nav_link" href = "index.html" >Home</a></li>
-                    <li id = "menu_list_two" class = "menu_nav_list"> <a class = "menu_nav_link" href= "about.html">About</a></li>
-                    <li id = "menu_list_three" class = "menu_nav_list"> <a class = "menu_nav_link"  href= "services.html">Services</a></li>
-                    <li id = "menu_list_four" class = "menu_nav_list"><a class = "menu_nav_link" id = "onPage" href= "contactUs.html">Contact</a></li>
-            </ul>
-        </div>
-        <img id = "close_image" src="images\close_image.png"  onclick = "close_menu()"alt = "This a button that closes the navigation menu">
-    </header>
-    <div id = "bar">
-    </div>
-    <div id = "big_image_container">
-        <div id = "desktop_title_logo_services">
-            <div id = "left_side_container">
-                <div id = "title_one_im">Art<br>Concrete<br>Construction</div>
-            </div>
-            <div id = "right_side_container">
-                <img id = "top_image_one" src="images\home\logo_transparent.png"  alt = "">
-            </div>
-            <div id = "services_list_container">
-                <ul id = "services_list_top">
-                    <li class = "services_list_item_top" id = "services_item_one">Driveways</li>
-                    <li class = "services_list_item_top" >Sidewalks</li>
-                    <li class = "services_list_item_top" >Slabs</li>
-                    <li class = "services_list_item_top" >Steps</li>
-                    <li class = "services_list_item_top" >Walls</li>
-                    <li class = "services_list_item_top" id = "services_item_six">Repairs</li>
-                    
-                </ul>
-            </div>
-        </div>
-        <div id = "mobile_desktop_title_logo_services">
-            <div id = "mobile_title_one_im">Art<br>Concrete<br>Construction</div>
-            <img id = "mobile_top_image_one" src="images\home\logo_transparent.png"  alt = "">
-            <ul id = "mobile_services_list_top">
-                <li class = "mobile_services_list_item_top" id = "mobile_services_item_one">Driveways</li>
-                <li class = "mobile_services_list_item_top" >Sidewalks</li>
-                <li class = "mobile_services_list_item_top" >Slabs</li>
-                <li class = "mobile_services_list_item_top" >Steps</li>
-                <li class = "mobile_services_list_item_top" >Walls</li>
-                <li class = "mobile_services_list_item_top" id = "mobile_services_item_six">Repairs</li>
-            </ul>
-        </div>
-        <div id = "wwd_container">
-            <div id = "left_side_second_level">
-                <div id = "slide_out_title_container">
-                    What We Do
-                </div>
-                <p id = "wwd_para">
-                    We do all types of residential and commercial concrete construction.
-                    No Job too small or too large!
-                    <br><br>
-                    If you would like to see more of our work, check out our services page
-                    by clicking the button below!
-                </p>
-                <div id = "button_container">
-                    <a href = "services.html" id = "services_button_on_third_level">Our Work!</a>
-                </div>
-            </div>
-            <div id = "right_side_second_level">
-                <img id = "image_one_on_third_block_third_level" src="images\home\image_one.jpg"  alt = "">
-                <img id = "image_two_on_third_block_third_level" src="images\home\image_two.jpg"  alt = "">
-            </div>
-            
-
-        </div>
-    </div>
-    <div id = "second_level_container">
-        <img id = "second_level_image_one" src="images\home\3d_image_fixed.png"  alt = "">
-        <div id = "second_level_small_right_side">
-            <img id = "experience_image_on_second_level" src="images\home\experience_sign_best_up.png"  alt = "">
-            <img id = "family_image_on_second_level" src="images\home\family_con.png"  alt = "">
-        </div>
-    </div>
-    <div id = "mobile_location_with_stamps_container">
-        <img id = "mobile_second_level_image_one" src="images\home\3d_image_fixed.png"  alt = "">
-        <div id = "mobile_second_level_small_right_side">
-            <img id = "mobile_experience_image_on_second_level" src="images\home\experience_sign_best_up.png"  alt = "">
-            <img id = "mobile_family_image_on_second_level" src="images\home\family_con.png"  alt = "">
-        </div>
+<header>
+    <div id = "logo_container">
+	   <a id = "logo" href = "index.html"> 
+            <img id = "logoImage" src="images\header\logo.jpg" alt="">
+        </a>
     </div>
     
-    <div id = "endPageBar">
+    <a id = "logo_mobile" href = "index.html"> 
+            <img id = "logoImage_mobile" src="images\header\logo.jpg" alt="">
+    </a>
+	<ul id = "nav_container">
+    	<li id = "list_one" class = "nav_list"><a class = "nav_link" href = "index.html" >Home</a></li>
+    	<li id = "list_two" class = "nav_list"> <a class = "nav_link" href= "about.html">About</a></li>
+    	<li id = "list_three" class = "nav_list"> <a class = "nav_link"  href= "services.html">Services</a></li>
+    	<li id = "list_four" class = "nav_list"><a class = "nav_link" id = "onPage" href= "contactUs.html">Contact</a></li>
+	</ul>
+    <img id = "menuImage" src="images\header\menu_blue.png"  onclick = "show_menu()" alt="Menu Button, press this button to open the navigation menu">
+    <div id = "menu_show_container">
+            
+            <ul id = "menu_nav_container">
+                    
+    	           <li id = "menu_list_one" class = "menu_nav_list"><a class = "menu_nav_link" href = "index.html" >Home</a></li>
+    	           <li id = "menu_list_two" class = "menu_nav_list"> <a class = "menu_nav_link" href= "about.html">About</a></li>
+    	           <li id = "menu_list_three" class = "menu_nav_list"> <a class = "menu_nav_link"  href= "services.html">Services</a></li>
+    	           <li id = "menu_list_four" class = "menu_nav_list"><a class = "menu_nav_link" id = "onPage" href= "contactUs.html">Contact</a></li>
+		   <li id = "menu_list_five" class = "menu_nav_list"><a class = "menu_nav_link" id = "onPage" href= "https://patientonlineportal.com/idp/account/signin?ReturnUrl=%2fidp%2fissue%2fwsfed%3fwa%3dwsignin1.0%26wtrealm%3dhttps%253a%252f%252fpatientonlineportal.com%252f%26wctx%3drm%253d0%2526id%253dpassive%2526ru%253d%25252f%26wct%3d2022-06-21T21%253a19%253a01Z%26wreply%3dhttps%253a%252f%252fpatientonlineportal.com%252f&wa=wsignin1.0&wtrealm=https%3a%2f%2fpatientonlineportal.com%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252f&wct=2022-06-21T21%3a19%3a01Z&wreply=https%3a%2f%2fpatientonlineportal.com%2f">Client Portal</a></li>
+	    </ul>
+    
     </div>
+    
+    <img id ="close_image" src="images\header\x_blue.png"  onclick = "close_menu()" alt = "This a button that closes the navigation menu, it is dark blue with a white x in the middle">
+    
+    <div id = "supervised_container">Jennifer Zamudio, MS, LPC-Associate | Supervised by Charlsa Placker, LPC-S</div>
+    
+    <div id = "switchContainer">
+        <label class = "textOne" id = "selectedLang" >English</label>
+        <label class = "switch">
+            <input id ="switchOne" type="checkbox" onclick="switchLanguage()" >
+            <span class="slider round"></span>
+        </label>
+        <label class = "textOne" id = "nonselectedLang">Spanish</label>
+    </div>
+    
+    <div id = "switchContainer_mobile">
+        <label class = "textOne" id = "selectedLang" >English</label>
+        <label class = "switch">
+        <input id = "switchOne_mobile" type="checkbox" onclick = "switchLanguage()">
+            <span class="slider round"></span>
+        </label>
+        <label class = "textOne" id = "nonselectedLang">Spanish</label>
+    </div>
+    <div id = "client_portal_container">
+            <a id = "client_portal_text" href = "https://patientonlineportal.com/idp/account/signin?ReturnUrl=%2fidp%2fissue%2fwsfed%3fwa%3dwsignin1.0%26wtrealm%3dhttps%253a%252f%252fpatientonlineportal.com%252f%26wctx%3drm%253d0%2526id%253dpassive%2526ru%253d%25252f%26wct%3d2022-06-21T21%253a19%253a01Z%26wreply%3dhttps%253a%252f%252fpatientonlineportal.com%252f&wa=wsignin1.0&wtrealm=https%3a%2f%2fpatientonlineportal.com%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252f&wct=2022-06-21T21%3a19%3a01Z&wreply=https%3a%2f%2fpatientonlineportal.com%2f" >Client Portal</a>
+    </div>
+</header>
+
+<div id = "whole_container_one">
+    <div id = "para_image_one" >
+        <a id = "today_link" href = "https://www.psychologytoday.com/us">
+            
+            <img id = "today_img"  src="images\home\place_filler.jpg"   alt="">
+        </a>
+    </div>
+    <img id = "center_logo"  src="images\header\logo.jpg"   alt="">
+</div>
+<div id = "iphone_whole_container_one">
+    <img id = "iphone_image_one"  src="images\home\iphone_image_one_low.jpg"   alt="">
+    <img class = "hidden_loading"  src="images\home\iphone_image_one_high.jpg" onload = "show_iphone_high_res_image_one()"   alt="">
+    <img id = "iphone_center_logo"  src="images\header\logo_center.jpg"   alt="">
+    <a id = "today_link" href = "https://www.psychologytoday.com/us">
+            
+        <img id = "today_img"  src="images\home\place_filler.jpg"   alt="">
+    </a>
+</div>
+<div id = "second_container">
+    <div id = "para_image_two" >
+         <div id = "center_text"> 
+                Are you feeling helpless, alone, and isolated questioning your purpose and meaning in life?<br><br>
+                Are you questioning yourself for decisions that may impact your life path? <br><br>
+                Do you sometimes feel like you're getting pulled in too many directions and your thoughts are all over the place?<br><br>
+        </div>   
+    </div>
+</div>
+<div id = "iphone_whole_container_two">
+    <div id = "iphone_para_image_two" >
+        <div id = "iphone_center_text"> 
+            Are you feeling helpless, alone, and isolated questioning your purpose and meaning in life?<br><br>
+            Are you questioning yourself for decisions that may impact your life path? <br><br>
+            Do you sometimes feel like you're getting pulled in too many directions and your thoughts are all over the place?<br><br>
+    </div>   
+   </div>
+   <img class = "hidden_loading"  src="images\home\iphone_image_two_high.jpg" onload = "show_iphone_high_res_image_two()"   alt="">
+</div>
+<div id = "third_container">
+        <p id = "third_para"> 
+                Sometimes life can be overwhelming because we may experience hardships, stressors, life transitions and choices that impact our present. As your therapist, I am here to help you find your inner strengths, equip you with coping skills to begin the healing process. Together we will identify your sense of self for you to find that balance in relationships, career, work and your unique life transition. 
+        </p>
         
-        
+</div>
+<div id = "image_divider">
+    <div id = "para_image_divider" ></div>
+    
+</div>
+<div id = "iphone_image_divider">
+    <img id = "iphone_image_three"  src="images\home\iphone_image_three_low.jpg"   alt="">
+    <img class = "hidden_loading"  src="images\home\iphone_image_three_high.jpg" onload = "show_iphone_high_res_image_three()"   alt="">
+</div>
+<div id = "fourth_container">
+    <div id = "fourth_title">WELCOME TO JENNIZ COUNSELING CENTER! </div>
+    <div id = "fourth_para">
+        JenniZ Counseling is a safe place where we provide a supportive environment where you can freely explore your current concern for therapy.  We will work together to create important and meaningful goals during therapy and move away from irrational thoughts, feelings or behaviors. My mission is to serve, help and empower you to remember your self-worth and gain the necessary tools to achieve your fullest potential to create mental health & wellness. 
+    </div>
+    <a id = "work_me_button" href="contactUs.html">Work With Me</a>
+</div>
+    
+
+<div id = "language_container">
+    Para Español<br><br>
+    <a id = "language_button" href="span/home.html">Presione Aquí</a><br>
+    <img id ="close_image_language" src="images\home\close_image_blue.png"  onclick = "close_language_box()" alt = "This a button that closes the spanish, it is dark blue with a white x in the middle">
+</div>
+
+<div id = "copy_container">
+    © Copyright 2022, JenniZ Counseling Center PLLC<br><br>
+</div>
+<img class = "hidden_loading" src = "images/home/image_one_high.JPG" alt = "" onload="show_high_res_image_one()" >
+<img class = "hidden_loading" src = "images/home/image_two_high.jpg" alt = "" onload="show_high_res_image_two()" >
+<img class = "hidden_loading" src = "images/home/image_three_high.jpg" alt = "" onload="show_high_res_image_three()" >
+
+<input id ="switch_dud" type="checkbox" onclick="switchLanguage()" >
 </body>
 <script type="text/javascript" src="JS-Script/homeScript.js"></script>
 </html>

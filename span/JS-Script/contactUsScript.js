@@ -6,12 +6,20 @@ var screen_width = screen.width;
 var screen_height = screen.height;
 //variable that identifies language switch
 var swch = document.getElementById("switchOne");
+var swch_mobile = document.getElementById("switchOne_mobile");
+//runs whatever is inside the function brackets on page laoding fully
+window.onload = function() {
+    "use strict";
+    //makes slider slide to spansih since on psanish page
+    swch.checked = true;
+    swch_mobile.checked = true;
+};
 //switch language to english by redirecting to other page with english text
 function switchLanguage() 
 {
     "use strict";
-    swch.checked = true;
-    window.location.href = "span/contactUs.html";
+    swch.checked = false;
+    window.location.href = "../contactUs.html";
 }
 
 //redirects user to email account they are logged into on the device they are using

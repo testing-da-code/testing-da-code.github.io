@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel = "stylesheet" href = "CSS-Style\servicesStyle.css">
+</head>
+<body>
+<header>
+    <div id = "logo_container">
+	   <a id = "logo" href = "home.html"> 
+            <img id = "logoImage" src="images\header\logo.jpg" alt="">
+        </a>
+    </div>
+    <a id = "logo_mobile" href = "home.html"> 
+            <img id = "logoImage_mobile" src="images\header\logo.jpg" alt="">
+        </a>
+	<ul id = "nav_container">
+    	<li id = "list_one" class = "nav_list"><a class = "nav_link" href = "home.html" >Comienzo</a></li>
+    	<li id = "list_two" class = "nav_list"> <a class = "nav_link" href= "about.html">Sobre Mi</a></li>
+    	<li id = "list_three" class = "nav_list"> <a class = "nav_link"  href= "services.html">Servicios</a></li>
+    	<li id = "list_four" class = "nav_list"><a class = "nav_link" id = "onPage" href= "contactUs.html">Contactanos</a></li>
+	</ul>
+    <img id = "menuImage" src="images\header\menu_blue.png"  onclick = "show_menu()" alt="Menu Button, press this button to open the navigation menu">
+    <div id = "menu_show_container">
+            
+            <ul id = "menu_nav_container">
+                    
+    	           <li id = "menu_list_one" class = "menu_nav_list"><a class = "menu_nav_link" href = "home.html" >Comienzo</a></li>
+    	           <li id = "menu_list_two" class = "menu_nav_list"> <a class = "menu_nav_link" href= "about.html">Sobre Mi</a></li>
+    	           <li id = "menu_list_three" class = "menu_nav_list"> <a class = "menu_nav_link"  href= "services.html">Servicios</a></li>
+    	           <li id = "menu_list_four" class = "menu_nav_list"><a class = "menu_nav_link" id = "onPage" href= "contactUs.html">Contactanos</a></li>
+	       </ul>
+    
+    </div>
+    
+    <img id ="close_image" src="images\header\x_blue.png"  onclick = "close_menu()" alt = "This a button that closes the navigation menu, it is dark blue with a white x in the middle">
+     <div id = "switchContainer">
+        <label class = "textOne" id = "nonselectedLang" >English</label>
+        <label class = "switch">
+        <input id = "switchOne" type="checkbox" onclick = "switchLanguage()">
+            <span class="slider round"></span>
+        </label>
+        <label class = "textOne" id = "selectedLang">Spanish</label>
+    </div>
+    
+    <div id = "switchContainer_mobile">
+        <label class = "textOne" id = "nonselectedLang" >English</label>
+        <label class = "switch">
+        <input id = "switchOne_mobile" type="checkbox" onclick = "switchLanguage()">
+            <span class="slider round"></span>
+        </label>
+        <label class = "textOne" id = "selectedLang">Spanish</label>
+    </div>
+</header>
+<div id = "bar">
+</div>
+<div id = "whole_container_one">
+    <div id = "pic_container">
+            <img id ="about_image_one" src="images\services\heart_image_b.png"   alt = "">
+            
+            
+    </div>
+    <div id = "about_info_container">
+            <div id = "title1">Telesalud</div>
+            <p id = "about_para">Telesalud es el uso de telecomunicación tecnológica para proveer servicios de salud mental vía sus dispositivos celular, computadora o laptop con conexión internet. Esta modalidad ayuda a proporcionar ayuda clínica a distancia. Visitas virtuales de telesalud dentro de la comodidad de su lugar seguro y privado. </p>
+            <div id = "title1">Consejería Individual</div>
+            <p id = "about_para">Servicios de consejería individual para adultos (18+) que residen en el Estado de Texas con sesiones semanales en línea disponibles.</p>
+            <div id = "title1">Tipos de servicios que le puedo ofrecer:</div>
+            <ul id = "type_list">
+                <li>Transiciones de Vida (mudanza, migrantes, profesión, divorcio)</li>
+                <li>Problemas de Relación</li>
+                <li>Estableciendo Límites Saludables</li>
+                <li>Manejo del Estrés y Agotamiento</li>
+                <li>Mejorar Autoestima y Confianza</li>
+                <li>Autodescubrimiento y Crecimiento Personal</li>
+                <li>Ansiedad</li>
+                <li>Depresión y Estado de Ánimo</li>
+                <li>Violencia Domestica</li>
+                <li>Abuso Sexual Incesto</li>
+                <li>Abuso de Pareja Íntima</li>
+                <li>Trauma</li>
+            </ul>
+            <div id = "title1">Mi práctica virtual ofrece:</div>
+            <ul id = "type_list">
+                <li>Privado en-línea, papeleo y facturación EHR programa regulado BAA & HIPAA
+                </li>
+                <li>Terapia remota usando HIPPA-federalmente regulado plataforma Tele-salud</li>
+                <li>Ambiente de apoyo y libre de prejuicios</li>
+            </ul>
+            
+                <a href = "contactUs.html" id = "book_button">Reserva tu Sesión</a>
+          
+            
+    </div>
+    
+    
+    <div id = "divider">
+    </div>
+</div>
+
+
+    <br>
+    © Copyright 2022, JenniZ Counseling Center PLLC<br><br>
+</body>
+<script type="text/javascript" src="JS-Script/servicesScript.js"></script>
+</html>

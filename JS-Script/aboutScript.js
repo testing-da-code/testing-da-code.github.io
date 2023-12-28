@@ -1,158 +1,146 @@
-//View Info:
-// This page has 3 different views
-//      - Desktop: more then set_limit width which is what most people will
-//                  see on a laptop
-//      - Browser to small: which is when the user shrinks the browser width 
-//                  to small so lower or equal to the set limit. This means
-//                  the browser is to small to have the desktop view look
-//                  viewable
-//      - Mobile: This view is for mobile on devices(phones,tablets, etc.)
-
-
-//These variables are used to get the browser width and height
+// Variables for browser width and height
 var browser_width = window.innerWidth;
 var browser_height = window.innerHeight;
-
-//These variables are used to get thescreen width and height
+// Variables for screen width and height
 var screen_width = screen.width;
 var screen_height = screen.height;
+//variable that identifies language switch
+var swch = document.getElementById("switchOne");
 
-// This variable is the set limit used to know when the browser width is to
-// small for desktop view so the minimum width for desktop view in a sense 
-// since anthting above set_limit is desktop view
-var set_limit = 900;
+//switch language to english by redirecting to other page with english text
+function switchLanguage() 
+{
+    "use strict";
+    swch.checked = true;
+    window.location.href = "span/about.html";
+}
 
-//View: mobile, browser to small
-//Summary: This function opens dropdown menu of tabs in header
+//shows mobile menu when click mobile menu button
 function show_menu()
 {
     'use strict';
     document.getElementById("menuImage").style.display = "none";
+    document.getElementById("switchContainer_mobile").style.display = "none";
     document.getElementById("menu_show_container").style.display = "block";
     document.getElementById("close_image").style.display = "block";
 }
-//View: mobile, browser to small
-//Summary: This function closes dropdown menu of tabs in header
+
+//closes mobile menu when click mobile menu button
 function close_menu()
 {
     'use strict';
      document.getElementById("menu_show_container").style.display = "none";
     document.getElementById("close_image").style.display = "none";
     document.getElementById("menuImage").style.display = "block";
+    document.getElementById("switchContainer_mobile").style.display = "block";
                             
    
 }
 
-
-
-//View: Browser too small
-//Summary: This functio checks to see if browser was adjusted to a size that is to small for
-//          the desktop view and this is not on a small device since the screen width
-//          is still bigger then the set limit
-//          Returns true if it is to small and false if it is not
-function is_browser_to_small()
-{
-    'use strict';
-    if(!(screen_width <= set_limit) && (browser_width <= set_limit))
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
-}
+//function that checks screen size and adjust view for desktop, mobile or mini browser(when user adjust browser in desktop)
 function checkScreen()
 {
-    'use strict';
-                        //  View: Browser to small
-                        //  Summary: Basically for when user adjust browser to too small view   
-                        //  Description: Here we changed the code to only allow 
-                        //  changes if the browser size
-                        //  is below/equal the set limit variable 
-                        //  and the screen size is above the set limit variable
-                        if(is_browser_to_small())
+                        'use strict';
+                        //closes menu incase resize screen whle mobile menu open
+                        close_menu();
+                        //Checks if screen width or browser width are 800px or below. if so enter
+                        if((screen_width <= 800) || (browser_width <= 800))
                         {
-                            //Remove desktop tabs
-                            //side note: in css i just did this with the class for 
-                            // mobile view
+                            //remove tabs
                             document.getElementById("list_one").style.display = "none";
                             document.getElementById("list_two").style.display = "none";
                             document.getElementById("list_three").style.display = "none";
                             document.getElementById("list_four").style.display = "none";
-
-                            //Show mobile menu button
+                            //remove switch container
+                            document.getElementById("switchContainer").style.display = "none";
+                            //remove desktop logo
+                            document.getElementById("logo_container").style.display = "none";
+                            //show mobile menu
                             document.getElementById("menuImage").style.display = "block";
-                            //resize nav container
-                            document.getElementById("nav_container").style.paddingTop = "60px";
-                            //resize image
-                            document.getElementById("logoImage").style.height = "50px";
-                            //bar height
-                            document.getElementById("bar").style.height = "95px";
+                            //show mobile logo
+                            document.getElementById("logoImage_mobile").style.display = "block";
+                             //show mobile switch
+                            document.getElementById("switchContainer_mobile").style.display = "block";
+                            //Expand containers so everything is one line as opposed to side by side
+                            document.getElementById("pic_container").style.width = "100%";
+                            document.getElementById("about_info_container").style.width = "100%";
+                            document.getElementById("approach_pic_container").style.width = "100%";
+                            document.getElementById("approach_info_container").style.width = "100%";
                             
-                            document.getElementById("desktop_view_container").style.display = "none";
-                            document.getElementById("mobile_view_container").style.display = "block";
-
-                        
-                           
+                            //Checks if screen widht is less then or equal to 800. 
+                            // that way if someone just minimized their browser on a desktop, the screen size will still be to big
+                            //in mobile phone
+                            if(screen_width <= 800)
+                            {
+                                document.getElementById("switchContainer_mobile").style.paddingTop = "150px";
+                            }
+                            else
+                            {
+                                // *** on mini browser ***
+                                //resize nav container
+                                document.getElementById("nav_container").style.paddingTop = "60px";
+                                //resize image
+                                //document.getElementById("logoImage_mobile").style.height = "90px";
+                                //bar height
+                                document.getElementById("bar").style.height = "140px";
+                                document.getElementById("logo_container").style.display = "none";
+                                //resize nav container
+                                document.getElementById("switchContainer_mobile").style.paddingTop = "0px";
+                                //document.getElementById("menuImage").style.height = "40px";
+                            }
                             
-                            
-
                             
                         }
-                        //  View: Desktop
-                        //  This code is ran in regular desktop/browser view so that means
-                        //  that both the browser and screen width are greater then set_limit
-                        if((screen_width > set_limit) && (browser_width > set_limit))
+                        //checks if screen width and browser width are more then 800px
+                        if((screen_width > 800) && (browser_width > 800))
                         {
-                            //Closes menu if menu is open when adjusting browser
+                            //closes menu incase resize screen whle mobile menu open
                             close_menu();
-                            //Removes menu button 
+                            //remove mobile switch
+                            document.getElementById("switchContainer_mobile").style.display = "none";
+                            //remove mobile logo
+                            document.getElementById("logoImage_mobile").style.display = "none";
+                            //remove mobile menu 
                             document.getElementById("menuImage").style.display = "none";
-                            //Brings back tabs
+                            //show desktop logo
+                            document.getElementById("logo_container").style.display = "block";
+                            //show desktop switch
+                            document.getElementById("switchContainer").style.display = "block";
+                            //show desktop navigation bar
                             document.getElementById("list_one").style.display = "inline";
                             document.getElementById("list_two").style.display = "inline";
                             document.getElementById("list_three").style.display = "inline";
                             document.getElementById("list_four").style.display = "inline";
-                          
-                            //resize nav container
-                            document.getElementById("nav_container").style.paddingTop = "70px";
-                            //resize image
-                            document.getElementById("logoImage").style.height = "80px";
-                            //bar height
-                            document.getElementById("bar").style.height = "110px";
-
-                            
-                            document.getElementById("mobile_view_container").style.display = "none";
-                            document.getElementById("desktop_view_container").style.display = "block";
-
+                            //half width of containers so fit side by side for desktop view
+                            document.getElementById("pic_container").style.width = "45.5%";
+                            document.getElementById("about_info_container").style.width = "45.5%";
+                            document.getElementById("approach_pic_container").style.width = "47%";
+                            document.getElementById("approach_info_container").style.width = "47%";
                            
+                            //resize nav container
+                            document.getElementById("nav_container").style.paddingTop = "5px";
+                            //resize image
+                            document.getElementById("logoImage").style.height = "120px";
+                            document.getElementById("switchContainer_mobile").style.paddingTop = "0px";
+                            //bar height
+                            document.getElementById("bar").style.height = "210px";
                            
                         }
 
 }
-//Here i call the checkscreen function for when page first loads for 
-//adjusting to neccessary view
+//checks screen on start
 checkScreen();
 
-//This event listener is used to to know when the browser is resized
-// if it is resized then checks screen to see if changes need to be made for
-// the website to look presentable
+//checks to see if browesr is resized, 
+//if resized calls functions to adjust website to screen dimensions
 window.addEventListener('resize', 
     function(event){
-                        //Gets new browser width and height
+                        //Gets browser widht and height
                         browser_width = window.innerWidth;
                         browser_height = window.innerHeight;
-                        //Gets new screen width and height
+                        //Gets screen width and height
                         screen_width = screen.width;
                         screen_height = screen.height;
-                        
-    
-                        //Closes menu when resized since if you dont close it then
-                        //both buttons will show with menu open
-                        close_menu();
-                        //when screen resizes calls this function to adjust website 
-                        //to work with website dimensions
+                        //calls function to adjsut website on screen and broswer dimensions
                         checkScreen();
-                        
                     });
