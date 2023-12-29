@@ -6,6 +6,9 @@ var screen_width = screen.width;
 var screen_height = screen.height;
 //variable to identify language switch
 var swch = document.getElementById("switchOne");
+//variable to kow if mobile menu is open
+var is_mobile_menu_open = false;
+
 
 window.onload = function() {
     "use strict";
@@ -44,24 +47,27 @@ function iOS()
 function show_menu()
 {
     'use strict';
+    is_mobile_menu_open = true;
     document.getElementById("menuImage").style.display = "none";
     document.getElementById("switchContainer_mobile").style.display = "none";
     document.getElementById("menu_show_container").style.display = "block";
     document.getElementById("close_image").style.display = "block";
     document.getElementById("supervised_container").style.display = "none";
+    document.getElementById("not_header_container").style.display = "none";
 }
 
 //closes mobile menu
 function close_menu()
 {
     'use strict';
+    is_mobile_menu_open = false;
     //document.getElementsByTagName("body").style.height = "auto";
-     document.getElementById("menu_show_container").style.display = "none";
+    document.getElementById("menu_show_container").style.display = "none";
     document.getElementById("close_image").style.display = "none";
     document.getElementById("menuImage").style.display = "block";
     document.getElementById("supervised_container").style.display = "block";
     document.getElementById("switchContainer_mobile").style.display = "block";
-                            
+    document.getElementById("not_header_container").style.display = "block";                   
    
 }
 
@@ -72,17 +78,33 @@ function close_language_box()
     'use strict';
      document.getElementById("language_container").style.display = "none";
     document.getElementById("close_image_language").style.display = "none";
+    
 
                             
    
 }
 
+//Makes menu image icon appear if it is needed
+// it is needed if the menu has not been opened
+function menu_image_appear()
+{
+    'use strict';
+    if(is_mobile_menu_open)
+    {
+        //if mobile menu open do nothing
+    }      
+    else
+    {
+        // mobile menu closed then show menu image icon
+        document.getElementById("menuImage").style.display = "block";
+    }                 
+   
+}
 //function that checks screen size and adjust view for desktop, mobile or mini browser(when user adjust browser in desktop)
 function checkScreen()
 {
                         'use strict';
-                        //closes menu incase resize screen whle mobile menu open
-                        //close_menu();
+                        
                         //Checks if screen width or browser width are 800px or below. if so enter
                         if((screen_width <= 800) || (browser_width <= 800))
                         {
@@ -98,8 +120,11 @@ function checkScreen()
                             document.getElementById("list_four").style.display = "none";
                             //remmove logo for desktop
                             document.getElementById("logo_container").style.display = "none";
-                            //show menu button image
-                            document.getElementById("menuImage").style.display = "block";
+                            
+                            //show menu button image if needed
+                            menu_image_appear();
+                            
+                            
                             //show mobile logo image
                             document.getElementById("logoImage_mobile").style.display = "block";
                              //show language switch for mobile
