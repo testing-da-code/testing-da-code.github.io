@@ -84,9 +84,9 @@ function close_language_box()
    
 }
 
-//Makes menu image icon appear if it is needed
-// it is needed if the menu has not been opened
-function menu_image_appear()
+// Hides/removes images in header that should not show when
+// mobile menu shows
+function menu_open_hidden_images_controller()
 {
     'use strict';
     if(is_mobile_menu_open)
@@ -97,6 +97,8 @@ function menu_image_appear()
     {
         // mobile menu closed then show menu image icon
         document.getElementById("menuImage").style.display = "block";
+        //mobile language switch container
+        document.getElementById("switchContainer_mobile").style.display = "block";
     }                 
    
 }
@@ -121,14 +123,13 @@ function checkScreen()
                             //remmove logo for desktop
                             document.getElementById("logo_container").style.display = "none";
                             
-                            //show menu button image if needed
-                            menu_image_appear();
+                            //hides header images that should show when mobile menu is open
+                            menu_open_hidden_images_controller();
                             
                             
                             //show mobile logo image
                             document.getElementById("logoImage_mobile").style.display = "block";
-                             //show language switch for mobile
-                            document.getElementById("switchContainer_mobile").style.display = "block";
+                            
                             
                             //Checks if screen widht is lessthen or equal to 800. 
                             // that way if someone just minimized their browser on a desktop, the screen size will still be to big
